@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Úvod do JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="jumbotron bg-danger">
+      <h1 id="nadpis" class="text-uppercase">Úvod do JavaScriptu</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Reakce na událost -->
+            <h2 onmouseover="console.log(this.innerText);">Co je JavaScript?</h2>
+            <ul>
+              <li>
+                JavaScript je multiplatformní, objektově orientovaný skriptovací
+                jazyk, který se nejčastěji používá k programování dynamických a
+                interaktivních WWW stránek.
+              </li>
+              <li>
+                Jeho syntaxe patří do rodiny jazyků C, C++ a Java. Slovo Java je
+                však součástí názvu pouze z marketingových důvodů
+              </li>
+              <li>
+                JavaScript byl vyvinut v 90. letech ve společnosti Netscape; v
+                současné době je využívána standardizovaná verze jazyka, které
+                je oficiálně pojmenovaná jako ECMAScript.
+              </li>
+              <li>
+                JavaScript dodržuje jistá bezpečnostní omezení (např. nelze v
+                něm pracovat se soubory), aby nemohlo být ohroženo soukromí
+                uživatele.
+              </li>
+              <li>
+                Důležité upozornění: JavaScript může být v prohlížeči z
+                bezpečnostních důvodů zakázán a není tedy vhodné podmiňovat
+                zobrazení důležitých informací podporou JavaScriptu!
+              </li>
+            </ul>
+            <img src="rumcajs.jpg" alt="Rumcajs" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2>Využití JavaScriptu</h2>
+            <ul>
+              <li>
+                Stal se programovacím nástrojem pro tvůrce webových stránek –
+                umožňuje jim vytvářet interaktivní stránky (DHTML = dynamické
+                HTML), které reagují na požadavky uživatele (nejčastěji události
+                vyvolané myší, klávesnicí apod.).
+              </li>
+              <li>
+                JDíky JavaScriptu lze aplikovat objektový přístup k webové
+                stránce a využívat možností, které nabízí tzv. DOM – Document
+                Object Model (objektový model stránky). Jednotlivé HTML elementy
+                jsou v tomto případě pojímány jako samostatné objekty a
+                prostřednictvím JavaScriptu můžeme měnit jejich vlastnosti a
+                ovlivňovat jejich chování.
+              </li>
+              <li>
+                Pomocí JavaScriptu můžeme detekovat typ uživatelova prohlížeče a
+                přizpůsobit podobu stránek konkrétní platformě.
+              </li>
+              <li>
+                JavaScript je nezbytnou součástí technologie AJAX, která
+                umožňuje stránkám komunikovat se serverem a zobrazovat uživateli
+                nový obsah či provádět různé dílčí změny (např. zobrazení
+                okamžitých náhledů na zboží v internetovém obchodě, využití
+                našeptávače ve vyhledávačích apod.), aniž je nutné znovu načítat
+                celou stránku.
+              </li>
+              <li>
+                V současnosti se stále častěji využívají javascriptové knihovny
+                typu Prototype a jQuery. Jejich cílem je usnadnit práci s DOM a
+                skrýt některé rozdíly mezi prohlížeči. Příkladem mohou být např.
+                interaktivní formulářové prvky pro výběr data pomocí kalendáře,
+                WYSIWYG editory, inteligentní seznamy apod.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Zásady psaní kódu v JavaScriptu</h2>
+          <p>
+            V JavaScriptu je nutné rozlišovat malá a velká písmena – např.
+            příkazy zmenBarvu() a zmenbarvu() volají dvě odlišné funkce. Při
+            vytváření identifikátorů vlastních proměnných a funkcí je vhodné
+            dodržovat programátorské konvence; název začínáme malým písmenem,
+            víceslovný název píšeme bez mezer, ale každé nové slovo zvýrazníme
+            velkým počátečním písmenem – např. var
+            obvodRovnoramennehoTrojuhelnika. Ve vlastních identifikátorech
+            nepoužíváme klíčová slova, mezery, speciální znaky nebo diakritiku.
+          </p>
+          <p>
+            Příkazy píšeme obvykle na samostatné řádky. V případě, že je na
+            jednom řádku více příkazů, oddělujeme je středníky. Ukončení příkazu
+            středníkem je však vhodné dodržovat vždy.
+          </p>
+          <p>
+            Chceme-li vytvořit blok příkazů (tj. například v případě podmínky
+            provést dva nebo více příkazů), používáme složené závorky.
+          </p>
+          <p>
+            Literáry složené ze znaků (znakové řetězce typu String) můžeme v
+            JavaScriptu podle okolností zapisovat mezi dvojité nebo jednoduché
+            uvozovky.
+          </p>
+          <p>
+            Příkaz document.write() slouží k vkládání HTML kódu do webové
+            stránky; ta je zastoupena objektem document.
+          </p>
+          <p>
+            POZOR - zapíšeme-li příkazem document.write do uzavřeného dokumentu
+            (což je například již zobrazený dokument), jeho obsah se tím
+            přepíše!
+          </p>
+          <p>
+            Jednořádkové komentáře jsou vyznačeny //, víceřádkové /* komentář
+            */.
+          </p>
+          <p>
+            Pokud je nějaký speciální znak, který JavaScript interpretuje,
+            potřeba zapsat do stránky, musí se využít tzv. escape sekvence. Před
+            inkriminovaný znak se napíše zpětné lomítko. Nejčastěji se to
+            používá u uvozovek.
+          </p>
+        </div>
+    </main>
+    <footer class="container-fluid">
+      <hr />
+      <div>
+        &copy; 2020 - <b>SŠPU Opava</b> - <mark>IT2</mark> -
+        <abbr title="programové vybavení">PVY</abbr>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript vložený do HTML -->
+    <script>
+      // alert('Funguje to');
+      // document.write("<h1 class=\"jumbotron\">Funguje to</h1>");
+      console.log('Funguje to');
+      console.log(8 ** (1 / 3));
+    </script>
+    <!-- JavaScript připojený z externího souboru .js -->
+    <script src="js/muj.js"></script>
+  </body>
+</html>
